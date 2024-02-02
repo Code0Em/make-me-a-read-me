@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 // **TASKS**
 
 // *TASK 1: Create an array which holds prompts for the user to answer (answers will then be used to used to generate contents of README).
@@ -8,9 +6,13 @@
 
 // **IMPORTS**
 // Imports Node's file system module
->>>>>>> Stashed changes
+
+// **IMPORTS**
+// Imports Node's file system module
 const fs = require("fs");
+// Imports Node's path module
 const path = require('path');
+// Imports nmp Inquirer module
 const inquirer = require("inquirer");
 // Imports from generateMarkdown.js
 const generateMarkdown = require("./utils/generateMarkdown");
