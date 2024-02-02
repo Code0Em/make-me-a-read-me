@@ -1,5 +1,5 @@
 // TASK 1: An array containing prompts for the user to answer (utilising inquirer package).
-userPrompts = [
+userPrompts = [ 
     {
         type: 'input',
         name: 'title',
