@@ -1,5 +1,9 @@
+// **IMPORTS**
+// Imports Node's file system module
 const fs = require("fs");
+// Imports Node's path module
 const path = require('path');
+// Imports nmp Inquirer module
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
