@@ -1,6 +1,4 @@
-// TASK 4: Creates the content of the readme (passing through user's answers to prompts).
-const makeReadme = (userAnswers) => {
-  return `# ${userAnswers.title}
+# n
 
   ## Contents
 
@@ -15,7 +13,7 @@ const makeReadme = (userAnswers) => {
 * [Contacts](#contacts)
 
 ## Description
-${userAnswers.description}
+n
 
 ## Build
 The project was built with:
@@ -23,13 +21,13 @@ The project was built with:
 //!NEED TO WORK THIS OUT
 
  ## Installation
- ${userAnswers.installation}
+ N/A
 
 ## Usage
-${userAnswers.usage}
+N/A
 
 ## Credits
-${userAnswers.credits}
+N/A
 
 ## License
 Distributed under:
@@ -39,16 +37,12 @@ Distributed under:
 Select the badge to view more information about the license.
 
 ## Contributions
-${userAnswers.contribution}
+N/A
 
 ## Contacts
 
 You can contact the developer on:
 
-*GitHub: [${userAnswers.github}](https://github.com/${userAnswers.github})
+*GitHub: [n](https://github.com/n)
 
-*Email: [${userAnswers.github}'s email](mailto:${userAnswers.email})`
-};
-
-// TASK 5: Exports to main js file
-module.exports = makeReadme;
+*Email: [n's email](mailto:nn@nn.nn)
