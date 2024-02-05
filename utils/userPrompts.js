@@ -27,7 +27,13 @@ userPrompts = [
         type: 'checkbox',
         name: 'build',
         message: 'Select the languages and technologies used to build your project:',
-        choices: ['Bootstrap', 'CSS', 'HTML', 'Javascript', 'jQuery', 'Node.js', 'Server Side API(s)', 'Other(s)'],
+        choices: ['Bootstrap', 'CSS', 'HTML', 'Javascript', 'jQuery', 'Node.js', 'NPM', 'API(s)', 'Other(s)'],
+        validate: (resp) => {
+            if (!resp.length) {
+                return `Please select at least one choice. If your language/technologies aren't listed, please select "Other(s)".`;
+            }
+            return true;
+        }
     },
     {
         type: 'input',
@@ -69,7 +75,7 @@ userPrompts = [
         type: 'list',
         name: 'license',
         message: 'Select the license that your project is distributed under:',
-        choices: ['Apache license 2.0', 'GNU General Public License v3.0', 'MIT', 'BSD 2-clause "Simplified" license', 'BSD 3-clause "New" or "Revised" license', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense'],
+        choices: ['Apache license 2.0', 'GNU General Public License v3.0', 'MIT', 'BSD 2-clause "Simplified" license', 'BSD 3-clause "New" or "Revised" license', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v3', 'Mozilla Public License 2.0', 'The Unlicense'],
     },
     {
         type: 'input',

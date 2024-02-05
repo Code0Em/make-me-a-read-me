@@ -32,8 +32,6 @@ ${userAnswers.usage}
 ${userAnswers.credits}
 
 ## License
-Distributed under:
-
 //!NEED TO WORK THIS OUT
 
 Select the badge to view more information about the license.
@@ -50,5 +48,6 @@ You can contact the developer on:
 *Email: [${userAnswers.github}'s email](mailto:${userAnswers.email})`
 };
 
+// **EXPORTS**
 // TASK 5: Exports to main js file
 module.exports = makeReadme;
