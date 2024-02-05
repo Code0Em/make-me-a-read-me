@@ -92,7 +92,7 @@ userPrompts = [
     {
         type: 'input',
         name: 'testing',
-        message: 'Provide any tests for your projects:',
+        message: 'Provide any tests for your project:',
         default: 'N/A',
         validate: (resp) => {
             if (resp.length < 3) {

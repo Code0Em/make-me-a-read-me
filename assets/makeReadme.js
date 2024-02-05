@@ -123,9 +123,9 @@ ${userAnswers.testing}
 
 You can contact the developer on:
 
-*GitHub: [${userAnswers.github}](https://github.com/${userAnswers.github})
+* GitHub: [${userAnswers.github}](https://github.com/${userAnswers.github})
 
-*Email: [${userAnswers.github}'s email](mailto:${userAnswers.email})`
+* Email: [${userAnswers.github}'s email](mailto:${userAnswers.email})`
 };
 
 // **EXPORTS**
