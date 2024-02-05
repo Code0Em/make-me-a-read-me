@@ -8,9 +8,9 @@
 // *TASK 6: Create function to create an output folder (for readme), using fs.mkdirSync(). Add try/catch blocks for error handling and add async to function (so it returns a promise and then we can use await on function call).
 // *TASK 7: Import Node's util module and then create function to write the readme file, using fs.writeFile(). Wrap this in util.promisify() to convert fs.writeFile() (which is based on callback) into a promise-based function.
 // *TASK 8: Create function to initialise the application. Add async to function (so returns promise) and try/catch blocks (to handle errors). Within try block: call promptUser function (from TASK 3) with await (so this waits for promise to be resolved before continuing); call the makeReadme function (from TASK 4), passing through the user's answers; call the newFolder function (from TASK 6) with await; call the writeFileAync function (from TASK 7) with await; log that the readme's been made. Within catch block: write error message to console.
-// !TASK 9: function for license badges?
+// *TASK 9: Create a function with a switch statement, where each case evaluates whether the userAnswers matches the license and if it does, returns the markdown code for that license badge. Run this function within the License section of the makeReadme function.
 // !TASK 10: function for language badges?
-// TASK 11: Call initApp function (from TASK 8).
+// *TASK 11: Call initApp function (from TASK 8).
 
 // **IMPORTS**
 // Imports Node's file system module
@@ -61,7 +61,7 @@ const initApp = async () => {
     // *CREDIT: Coder’s understanding of await keyword developed thanks to Xpert Learning Assistant’s (2024) answer to “explain this: const userAnswers = await promptUser();”.
     const userAnswers = await promptUser();
 
-    // Calls makeReadme() function, passing through userAnswers as argument (i.e. returned value from promptUser() function). Assigns the returned value to readmeContent variable
+    // Calls makeReadme() function, passing through userAnswers as argument (i.e. returned value from promptUser() function). Assigns the returned value to readmeContent variable.
     const readmeContent = makeReadme(userAnswers);
 
     // Calls newfolder() function, but waits for this function to finish before continuing.
@@ -70,12 +70,12 @@ const initApp = async () => {
     // Calls writeFileAsync() function, which writes readmeContent to file named "readme.md" in "output" folder; but waits for this function to finish before continuing.
     await writeFileAsync('output/readme.md', readmeContent);
 
-    // Write below message to console.
+    // Writes below message to console.
     console.log('Your Readme has been made. Check the Output directory!');
 
     // If an error is thrown in try block, "catch it" and run this code:
   } catch (err) {
-    // Write the error to the console.
+    // Writes the error to the console.
     console.error(err);
   }
 };
