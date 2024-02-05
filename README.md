@@ -29,6 +29,8 @@ The `javascript` files have been commented throughout with pseudocode (breaking 
 
 ## Installation
 
+If you haven’t already, please [download `node.js`](https://nodejs.org/en/) to your machine before proceeding with the installation instructions.
+
 1. Clone this repository to your machine
 1. Open your terminal
 1. Navigate to the root of the newly cloned directory
