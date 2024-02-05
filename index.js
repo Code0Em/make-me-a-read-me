@@ -22,9 +22,9 @@ const util = require('util');
 // Imports nmp Inquirer module
 const inquirer = require("inquirer");
 // Imports from makeReadme.js
-const makeReadme = require("./utils/makeReadme");
+const makeReadme = require("./assets/makeReadme");
 // Imports from userPrompts.js
-const userPrompts = require("./utils/userPrompts");
+const userPrompts = require("./assets/userPrompts");
 
 // **FUNCTIONS**
 // Task 3: Prompts user to answer prompts from userPrompts array, and returns promise (which resolves with object containing user's answers) (to be used as content for the readme).
